@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+h1 {
+    font-size: 4.5em;
+    line-height: 1.1;
+    text-align: center;
+    color: aliceblue;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right: 100px;
+
+}
+
+h2 {
+  font-size: 2.0em;
+  line-height: 1.1;
+  text-align: center;
+  color: rgb(173, 176, 182);
+  font-family: Arial, Helvetica, sans-serif;
+  margin-right: 100px;
+}
+
+
+h3 {
+  font-size: 2.0em;
+  line-height: 1.1;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-family: Arial, Helvetica, sans-serif;
+  padding-bottom: 0%;
+}
+
+.img {
+  position: fixed;
+  background: url(./assets/team25a.jpg);
+  background-size: cover;
+  min-height: 100vh;
+  width: 100%;
+  filter: brightness(0.2);
+  /* background-attachment: fixed; */
+ 
+}
+
+.img::before {
+  content: '';
+  /* position: auto; */
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100vh;
+  background-color: black; 
+ 
+  z-index: 1;
+  
+}
+
+.img>* {
+  /* position: auto; */
+  z-index: 2;
+  
+}
+
+.h {
+  padding: 25px;
+  left: 39%;
+  margin-top: 40px;
+}
+
+.h button {
+  padding: 12px 25px;
+  border: 1px solid hsla(0, 0%, 0%, 0.582);
+  border-radius: 10px;
+  margin-top: 17px;
+}
+
+.j {
+  padding: 25px;
+  left: 39%;
+  margin-top: 40px;
+}
+
+.j button {
+  padding: 12px 25px;
+  border: 1px solid hsla(0, 0%, 0%, 0.582);
+  border-radius: 10px;
+  margin-top: 17px;
+}
+
+

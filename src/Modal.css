@@ -1,0 +1,187 @@
+/* Modal overlay */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 90%;
+    margin-left: 550px;
+    padding-left: 50px;
+    background-color: #4d434300;
+    margin-top: 90px;  
+    border: #383030d2;
+    border-radius: 10%;
+    overflow-y: scroll; 
+    scrollbar-width: none; 
+}
+.modal-overlay::-webkit-scrollbar {
+    width: 0px;
+}
+.modal-overlay-input{
+    position: fixed;
+    overflow-y: scroll;
+    scrollbar-width: none; 
+
+    
+}
+
+/* Modal content */
+.modal-content {
+    
+    background: #020111b0;
+    padding: 15px;
+    border: 2px solid rgba(253, 253, 253, 0.527);
+    border-radius: 15px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    height: 400px;
+    width: 700px;
+    color: #ffffff;
+    animation: fadeInAnimation ease 1s forwards;
+    padding-left: 60px;
+}
+
+.hover-text:hover {
+    transform: scale(1.1); /* Enlarge the text */
+    transition: transform 0.8s ease;
+    cursor:default;
+    
+}
+
+.logo :hover{
+    transform: scale(1.3); /* Enlarge the text */
+    transition: transform 0.8s ease;
+    cursor:default;
+}
+
+/* Fade In Animation */
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+        justify-content: center;
+        margin-right: 100px;
+        margin-top: 20px;
+    }
+}
+@keyframes textPop {
+    0% {
+        
+        transform: scale(0.8);
+    }
+    100% {
+        transform: scale(1);
+        justify-content: center;
+    }
+}
+
+
+/* Fade Out Animation */
+@keyframes fadeOutAnimation {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+        margin-left: 100px;
+        margin-bottom: 20px;
+    }
+    100% {
+        opacity: 0;
+        transform: scale(0.8);
+       
+    }
+}
+
+/* Apply fade-out class */
+.fade-out {
+    animation: fadeOutAnimation ease 1s forwards;
+}
+
+/* Style for buttons */
+.task-item button {
+    margin-top: 10px;
+    padding: 11px 14px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 50px;
+    margin-inline: 10px;
+    background-color: rgba(201, 19, 19, 0.767);
+    border: 2px solid black;
+    color:rgb(214, 212, 201);
+}
+
+button{
+    margin-top: 10px;
+    padding: 11px 14px;
+    border-radius: 10px;
+    margin-inline: 10px;
+    border: 2px solid black;
+}
+
+button:hover{
+    background-color: rgb(97, 12, 12);
+    color: #ffffff;
+    border: 3.5px solid #ffffff;
+    cursor:grab;
+}
+
+.Modalbuttons button{
+    margin-top: 10px;
+    padding: 11px 14px;
+    border-radius: 10px;
+    margin-inline: 10px;
+    border: 2px solid rgb(0, 0, 0);
+}
+.task-item button:hover{
+    background-color: rgb(97, 12, 12);
+    color: #ffffff;
+    border: 3.5px solid #ffffff;
+    cursor:grab; 
+}
+
+.Modalbuttons button:hover{   
+    background-color: rgb(97, 12, 12);
+    color: #ffffff;
+    border: 2px solid #ffffff;
+    cursor: grab;
+    transform: scale(1.1);
+    transition: transform 0.8s ease;
+
+}
+
+.task-item {
+    padding: 20px;
+    padding-bottom: 100px;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 50px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    height: 200px;
+    width: 700px;
+    color: #fffcfc;
+    animation: fadeInAnimation ease 1s forwards;
+    text-align: center;
+    margin-top: 10px;
+    background: url(./assets/logo.png);
+    background-repeat: no-repeat;
+    background-size:120px;
+    background-position: 70px;
+    background-color: #020111fb;
+    
+
+   
+}
+
+.task-item :hover{
+    transform: scale(1.07); /* Enlarge the text */
+    transition: transform 0.8s ease;
+    cursor:default;
+}
+
+.success-message {
+    text-align: center;
+    color: rgb(248, 248, 248);
+    font-size: 1.5rem;
+    padding-top: 20%;
+}
