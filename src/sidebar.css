@@ -3,7 +3,9 @@
     padding: 0;
     box-sizing: border-box;
   }
- 
+html{
+    scroll-behavior: smooth;
+}
   a {
     text-decoration: none;
     outline: none;
@@ -93,9 +95,8 @@
   }
  
   .offcanvas-menu nav > ul li a {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
     line-height: 1.5;
-    font-weight: 400;
     color: #fff;
     display: block;
     background-color: transparent;

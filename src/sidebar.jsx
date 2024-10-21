@@ -29,7 +29,7 @@ function Sidebar() {
                 </div>
                 <ul>
                     <li>
-                        <a href="#">
+                        <a style={{marginTop:'40px'}} href="#">
                             <FontAwesomeIcon icon={faFile} style={{ color: "#f0f2f5" ,marginRight:'20px'}} />
                             TASKS
                         </a>
@@ -41,20 +41,20 @@ function Sidebar() {
                         </a>
                     </li>
                     <li>
-                        <a style={{ marginLeft: "28px" }} href="#resume">
-                            <FontAwesomeIcon icon={faCircleExclamation} style={{ color: "#e5e0e0",marginRight:'20px' }} />
+                        <a style={{marginLeft: '20px'}} href="#resume">
+                            <FontAwesomeIcon icon={faCircleExclamation} style={{ color: "#e5e0e0",marginRight: '18px'  }} />
                             IMPORTANT
                         </a>
                     </li>
                     <li>
-                        <a style={{ marginLeft: "28px" }} href="#skills">
-                            <FontAwesomeIcon style={{marginRight:'20px'}} icon={faCalendarDays} />
+                        <a style={{marginLeft: '20px'}} href="#skills">
+                            <FontAwesomeIcon icon={faCalendarDays} style={{marginRight: '18px'}}/>
                             CALENDAR
                         </a>
                     </li>
                 </ul>
-                <div style={{ display: "block", marginTop: "380px", textAlign: "center", marginRight: "45px" }}>
-                    <p style={{ color: "#e5e0e0", fontSize: "30px" }}>
+                <div style={{ display: "block", marginTop: "490px", textAlign: "center", marginRight: "45px" }}>
+                    <p style={{ color: "#e5e0e0", fontSize: "24px" }}>
                         <FontAwesomeIcon style={{marginRight:'20px'}} icon={faUser} />
                         Profile
                     </p>

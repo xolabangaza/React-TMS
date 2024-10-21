@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import red from './assets/logo.png';
 import axios from 'axios';
 import ModalforAdmins from './ModalforAdmins'; // Assuming this is for viewing tasks
 import { getAuth, createUserWithEmailAndPassword } from 'firebase/auth';
@@ -119,21 +118,7 @@ function Master() {
     return (
         <div>
             <div className="img"></div>
-            <div className="logo">
-                <img
-                    src={red}
-                    onClick={handleClickHome}
-                    alt=""
-                    style={{
-                        position: 'fixed',
-                        height: '100px',
-                        width: '100px',
-                        marginTop: '40px',
-                        cursor: 'grab',
-                        marginLeft: '40px'
-                    }}
-                />
-            </div>
+    
 
             <div className='welcomeText' style={{
                 display: 'flex',

@@ -34,35 +34,31 @@ h3 {
   padding-bottom: 0%;
 }
 
-.img {
+/* .img {
   position: fixed;
   background: url(./assets/team25a.jpg);
   background-size: cover;
   min-height: 100vh;
   width: 100%;
   filter: brightness(0.2);
-  /* background-attachment: fixed; */
  
-}
+} */
 
 .img::before {
   content: '';
-  /* position: auto; */
   top: 0;
   left: 0;
   width: 100%;
   min-height: 100vh;
   background-color: black; 
- 
   z-index: 1;
   
 }
 
-.img>* {
-  /* position: auto; */
+/* .img>* {
   z-index: 2;
   
-}
+} */
 
 .h {
   padding: 25px;
