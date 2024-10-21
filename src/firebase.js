@@ -4,7 +4,7 @@ import { getFirestore } from 'firebase/firestore';
 
 
 const firebaseConfig = {
-    apiKey: process.env.REACR_APP_API_KEY,
+    apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
     authDomain: "tmsystem-1feac.firebaseapp.com",
     projectId: "tmsystem-1feac",
     storageBucket: "tmsystem-1feac.appspot.com",

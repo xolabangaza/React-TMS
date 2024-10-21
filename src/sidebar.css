@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+ 
+  a {
+    text-decoration: none;
+    outline: none;
+  }
+ 
+  li {
+    list-style: none;
+  }
+ 
+  .logo img {
+    width: 80px;
+    height: 70px;
+   
+  }
+ 
+  @keyframes hover {
+    50% {
+      transform: translateX(10px);
+    }
+  }
+ 
+  .offcanvas-menu > label {
+    top: 30px;
+    left: 30px;
+    position: fixed;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    display: flex;
+    align-items: center;
+    z-index: 9999;
+  }
+ 
+  .offcanvas-menu label span,
+  .offcanvas-menu label span::before,
+  .offcanvas-menu label span::after {
+    transition: background 0.3s, transform 0.3s;
+  }
+ 
+  .offcanvas-menu label span,
+  .offcanvas-menu label span::before,
+  .offcanvas-menu label span::after {
+    content: "";
+    position: absolute;
+    height: 4px;
+    width: 40px;
+    background: red;
+    cursor: pointer;
+  }
+ 
+  .offcanvas-menu label span::before {
+    transform: translateY(-12px);
+  }
+ 
+  .offcanvas-menu label span::after {
+    transform: translateY(12px);
+  }
+ 
+  .offcanvas-menu nav {
+    position: fixed;
+    height: 100%;
+    width: 300px;
+    left: -350px;
+    overflow: hidden;
+    background: rgb(31, 30, 30);
+    transition: 0.3s ease;
+    padding: 40px 30px;
+  }
+ 
+  .offcanvas-menu nav > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+ 
+  .offcanvas-menu nav > ul {
+    margin-top: 30px;
+  }
+ 
+  .offcanvas-menu nav > ul li {
+    cursor: pointer;
+    padding: 10px 0;
+    transform: translateX(-30px);
+    opacity: 0;
+    transition: 0.4s ease;
+  }
+ 
+  .offcanvas-menu nav > ul li a {
+    font-size: 2.5rem;
+    line-height: 1.5;
+    font-weight: 400;
+    color: #fff;
+    display: block;
+    background-color: transparent;
+    border-radius: 10px;
+    width: 190px;
+    text-align: center;
+  }
+ 
+  .offcanvas-menu input[type="checkbox"] {
+    display: none;
+  }
+ 
+  .offcanvas-menu input[type="checkbox"]:checked ~ label {
+    opacity: 0;
+    pointer-events: none;
+  }
+ 
+  .offcanvas-menu input[type="checkbox"]:checked ~ nav {
+    left: 0;
+  }
+ 
+  .offcanvas-menu input[type="checkbox"]:checked ~ nav label span {
+    background: transparent;
+  }
+ 
+  .offcanvas-menu input[type="checkbox"]:checked ~ nav label span::before {
+    transform: rotate(-45deg);
+  }
+ 
+  .offcanvas-menu input[type="checkbox"]:checked ~ nav label span::after {
+    transform: rotate(45deg);
+  }
+ 
+  .offcanvas-menu input[type="checkbox"]:checked ~ nav ul li {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+ 
+ 
